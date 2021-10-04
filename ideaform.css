@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 5;
+  margin: 5;
+  box-sizing: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  font-size: 1.6rem;
+  width: 100%;
+  min-height: 100vh;
+  /* justify-content: center;
+  align-items: center; */
+  font-family: "Red Hat Display", sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url("./Images/ideationformback.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+.logo {
+  width: 10%;
+  position: relative;
+  right: 10%;
+  
+}
+
+.red{
+  color: crimson;
+}
+
+.heading {
+  display: flex;
+}
+
+.mainheading {
+  color: crimson;
+  position: relative;
+  left: 83%;
+}
+
+h3 {
+  color: black;
+  position: relative;
+  left: 62%;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: crimson;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  left: 83.5%;
+}
+
+input[type="submit"]:hover {
+  background-color: darkred;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  /* padding: 50px; */
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.col-25 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  padding-left: 5%;
+}
+
+.col-75 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+  padding-right: 5%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
